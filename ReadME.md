@@ -40,6 +40,29 @@ This shows the model outperforms the baseline and learns meaningful demand patte
 - online_retail_II.csv: source dataset
 - app.py: FastAPI prediction API
 
+
+# RIDF
+
+Retail Inventory Demand Forecasting
+
+## Project Overview
+RIDF is a retail demand forecasting project that predicts daily item demand using historical sales data and machine learning.
+
+## FastAPI Backend
+- GitHub Repository: https://github.com/jayeshkoli-1402/RIDF-API
+- Live Deployment: https://ridf-api.onrender.com/
+
+## Model
+The forecasting model is trained in the notebook `model.ipynb` using XGBoost and sales-based lag features such as:
+- lag_1
+- lag_7
+- rolling_mean
+- day_of_week
+- month
+
+## Usage
+The deployed API accepts a JSON payload and returns a demand prediction.
+
 ## Setup
 ```bash
 python -m venv .venv
